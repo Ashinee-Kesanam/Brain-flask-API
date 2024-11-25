@@ -23,6 +23,8 @@ matplotlib.use('Agg')
 app = Flask(__name__)
 CORS(app)
 
+port = 10000 || 5001
+
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s')
 
