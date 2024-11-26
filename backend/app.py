@@ -23,7 +23,7 @@ matplotlib.use('Agg')
 app = Flask(__name__)
 CORS(app)
 
-port = 10000 || 5001
+port = 10000
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s')
@@ -299,4 +299,4 @@ def upload_dicom():
 if __name__ == '__main__':
     if not os.path.exists('uploads'):
         os.makedirs('uploads')
-    app.run(debug=True, port=5001)
+    app.run(debug=True, port=port)
